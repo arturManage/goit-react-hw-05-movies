@@ -7,7 +7,7 @@ export default function MovieDetails() {
   const { movieId } = useParams();
   const location = useLocation();
   console.log(location.state);
-  const backLinkHref = location.state?.from ?? '/';
+  // const backLinkHref = location.state?.from ?? '/';
   const [value, setValue] = useState({});
   const navigate = useNavigate();
   const goBack = () => navigate(location.state.from);
